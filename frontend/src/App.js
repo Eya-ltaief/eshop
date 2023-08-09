@@ -8,7 +8,7 @@ function App() {
    <BrowserRouter>
    <div>
       <header>
-        <a href='/'>eSHOP</a>
+        <a href='/' className='logo'>eSHOP</a>
       </header>
       <main>
         <Routes>
