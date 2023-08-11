@@ -1,8 +1,9 @@
 import React, {useEffect, useReducer} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
-
-
+import Product from '../components/Product'
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 const reducer = (state, action)=>{
   switch(action.type){
     case "FETCH_REQUEST":
@@ -38,21 +39,9 @@ const HomeScreen = () => {
     <div>
         <div className='products'>
             {products.map((product)=>(
-                <div className='product' key={product.slug}>
-                <Link href={`product/${product.slug}`}>
-                     <img src={product.image} alt={product.image}/>
-                </Link>
-              
-              <div className='product-info'>
-                <Link href={`/product/${product.slug}`}>
-                <p>{product.name}</p>
-                </Link>
-                <p>
-                    <strong>${product.price}</strong>
-                </p>
-                <button>Add To Cart</button>
-              </div> 
-            </div>
+              <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
+                <Product product={product}></Product>
+              </Col>
             ))}
         </div>
     </div>
