@@ -1,8 +1,8 @@
 const data = {
   products: [
     {
-      name: 'Nike Slim shirt',
-      slug: 'nike-slim-shirt',
+      name: 'Itouch glasses 01',
+      slug: 'Itouch glasses 01',
       category: 'Shirts',
       image: require('./images/p1.jpg'), // 679px × 829px
       price: 120,
@@ -13,8 +13,8 @@ const data = {
       description: 'high quality shirt',
     },
     {
-      name: 'Adidas Fit Shirt',
-      slug: 'adidas-fit-shirt',
+      name: 'Itouch glasses 02',
+      slug: 'Itouch glasses 02',
       category: 'Shirts',
       image: require('./images/p8.jpg'),
       price: 250,
@@ -25,8 +25,8 @@ const data = {
       description: 'high quality product',
     },
     {
-      name: 'Nike Slim Pant',
-      slug: 'nike-slim-pant',
+      name: 'Itouch glasses 03',
+      slug: 'Itouch glasses 03',
       category: 'Pants',
       image: require('./images/p4.jpg'),
       price: 25,
@@ -37,8 +37,8 @@ const data = {
       description: 'high quality product',
     },
     {
-      name: 'Adidas Fit Pant',
-      slug: 'adidas-fit-pant',
+      name: 'Itouch glasses 04',
+      slug: 'Itouch glasses 04',
       category: 'Pants',
       image: require('./images/p5.jpg'),
       price: 65,
